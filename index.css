@@ -1,0 +1,17 @@
+body {
+  max-width: 100vw;
+}
+
+.line {
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.short-description {
+  -webkit-line-clamp: 6;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
