@@ -35,17 +35,83 @@
         <div class="col"></div>
 
         <div class="col-lg-8 p-3 mt-3 shadow rounded border">
+
+          <form id="user-form_post">
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <span class="text_left">Code</span>
+              </div>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputCode">
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <span class="text_left">ФИО</span>
+              </div>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputFullName">
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <span class="text_left">Сколько денег хотите?</span>
+              </div>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputBalance">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3 pe-3 ps-3">
+              <button class="btn btn-primary" id="my_money" type="submit" style="float: right;">Открыть счёт</button>
+            </div>
+          </form>
+
+          <div class="row mb-3 pe-3 ps-3">
+            <button class="btn btn-danger" id="my_money_02" type="submit" style="float: right;">Закрыть счёт</button>
+          </div>
+          
+          <div class="row mb-3 pe-3 ps-3 mt-3">
+            <span class="text_left">Данные по вашему счёту</span>
+          </div>
+
+
+
+
           <form id="user-form">
             <div class="row mb-3">
               <div class="col-sm-3">
-                <span class="text_left">code</span>
+                <span class="text_left">Номер счёта</span>
               </div>
               <div class="col-sm-9">
-                <span class="form-control" id="inputSimple" type="text">code</span>
+                <span class="my_cod" id="my_code" type="text"></span>
               </div>
             </div>
-            <button class="btn btn-primary" type="submit" style="float: right;">Показать</button>
 
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <span class="text_left">ФИО</span>
+              </div>
+              <div class="col-sm-9">
+                <span class="my_ownerr" id="my_owner" type="text"></span>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <span class="text_left">Баланс</span>
+              </div>
+              <div class="col-sm-9">
+                <span class="my_balancee" id="my_balance" type="text" onclick="goo()"></span>
+              </div>
+            </div>
           </form>
         </div>
         
